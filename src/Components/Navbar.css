@@ -1,0 +1,53 @@
+
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.568);
+  height: auto;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+a {
+  font-weight: bold;
+  font-size: 20px;
+}
+.logo {
+  margin-top: -45px;
+  margin-bottom: -40px;
+  width: 145px;
+  height: 115px;
+}
+
+.navbar-toggler-icon 
+{
+  color: blue;
+}
+
+@media only screen and (max-width: 760px) {
+  .custom-navbar Button {
+    margin-left: 150px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .custom-navbar Button {
+    margin-left: 150px;
+  }
+}
+
+/* Style for floating effect on hover */
+.nav-link:hover {
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px); /* Move the element 5 pixels upward on hover */
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  -webkit-transition: text-shadow 0.3s ease-in-out;
+  -o-transition: text-shadow 0.3s ease-in-out;
+  transition: text-shadow 0.3s ease-in-out;
+}

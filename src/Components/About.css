@@ -1,0 +1,80 @@
+.about-me-content h2 {
+  color: #333;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.text-content span {
+  color: orange;
+}
+
+.about-me-content p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.about-me-content {
+  background-color: #f7f7f7;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.text-content {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about-me-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .text-content {
+    max-width: 60%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .profile-image-container,
+  .text-content {
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+    scale: 0.5;opacity: 0;
+  }
+  @keyframes fade-in {
+    from {
+      scale: 0.5;
+      opacity: 0;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+}

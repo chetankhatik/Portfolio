@@ -1,0 +1,74 @@
+.container-fluid
+{
+  background-image: url(./images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+
+}
+
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 130px;
+  justify-content: space-around;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.social-links {
+  margin-top: 170px;
+}
+
+.social-links a {
+  margin-right: 9px;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30% 70% 70% 30% / 44% 39% 61% 56%;
+}
+
+.left-section h1,
+h2 {
+  color: white;
+}
+
+.social-links a .icon2 {
+  font-size: 40px;
+}
+
+.social-links .github-icon {
+  color: white;
+}
+
+.textcontent {
+  height: 50px;
+}
+
+.textcontent,.social-links,.profile-photo {
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit ;
+}
+
+@keyframes fade-out {
+ 0% {
+    opacity: 0;
+  }
+}
+
+

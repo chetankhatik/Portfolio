@@ -1,0 +1,51 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px; /* Set a maximum width for better responsiveness */
+  margin: 0 auto; /* Center the skills container */
+}
+
+.skill-item {
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+  border-radius: 10%;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin: 20px;
+  width: 25%; /* Adjust the width to fit 4 skills in a line */
+  box-sizing: border-box;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.progress-container {
+  position: relative;
+  width: 100%;
+}
+
+.skill-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+.skill-label {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .skill-item {
+    width: 35%; /* Adjust for mobile and tablet views */
+  }
+}
+
+.skill-item:hover {
+  box-shadow: 0 8px 16px rgb(19, 171, 241);
+  transform: translateY(-5px);
+}
+
+
+

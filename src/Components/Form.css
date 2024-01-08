@@ -1,0 +1,138 @@
+.contact-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-form-container form {
+  width: 100%; /* Adjust as needed for tablet and desktop */
+  max-width: 500px; /* Add a maximum width for larger screens */
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3c76e0;
+}
+
+.social-logos1,.social-logos2 {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 9px 9px 13px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.social-logos1 a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.social-logos a span {
+  font-size: 20px;
+}
+
+.icon1 {
+  color: #4733ff;
+  font-size: 40px;
+}
+
+.icon2 {
+  color: #ff5733;
+  font-size: 40px;
+}
+
+.linkedIn-icon {
+  color: #0077b5;
+  font-size: 40px;
+}
+
+.github-icon {
+  color: #211f1f;
+  font-size: 40px;
+}
+
+.whatsapp-icon {
+  color: #25d366;
+  font-size: 40px;
+}
+
+.instagram-icon {
+  color: #e4405f;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container form {
+    width: 100%; /* Adjust as needed for tablet */
+  }
+  .social-logos a span {
+    font-size: 12px;
+  }
+  .social-logos {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-container form {
+    width: 100%; /* Adjust as needed for mobile */
+  }
+  .social-logos a span {
+    font-size: 12px;
+  }
+  .social-logos {
+    margin-left: 10px;
+  }
+}
+
+
+@keyframes moveProgress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

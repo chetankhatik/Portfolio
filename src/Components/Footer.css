@@ -1,0 +1,77 @@
+
+.list-inline-item {
+  letter-spacing: 80px;
+  font-size: 20px;
+}
+
+.social-logosx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-logosx .iconx {
+  font-size: 30px;
+}
+.social-logosx .github-icon {
+  color: white;
+}
+
+.social-logosx {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .social-logosx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .social-logosx .iconx {
+    font-size: 30px;
+  }
+  .social-logosx .github-icon {
+    color: white;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .social-logosx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .social-logosx .iconx {
+    font-size: 30px;
+  }
+  .social-logosx .github-icon {
+    color: white;
+  }
+ 
+}
+
+
